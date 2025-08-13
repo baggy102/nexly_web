@@ -1,8 +1,14 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Main from './pages/Main';
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">MeetUp Platform</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/main" element={<Main />} />
+      </Routes>
+    </Router>
   );
 }
 
